@@ -1,0 +1,37 @@
+kmd-ngwu-psa
+# find max and min numbers.
+# find the sum and average of list
+# reverse a list
+# count occurence of an element (strings)
+# convert list into tuple
+# find index of element in tuple
+# concat two tuples
+# count element in tuple
+# revise set union, intersection, difference, symmentric difference
+# check if element exist in set
+
+# Dictionary
+# count frequency of words = "hello welcome to python"
+# swap keys and values
+# give student with highest marks
+# merge two dictionaries
+# filter dictionary based on condition
+
+# function
+# prime or not
+# factorial + recursion
+# 3 numbers - find largest one
+# reverse string
+# count vowels in string
+# fibonnaci series
+
+
+# loops
+# sum of numbers
+# find sum of all numbers divisible by 3 or 5
+
+# *
+# **
+# ***
+# ****
+# *****
