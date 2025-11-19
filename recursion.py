@@ -48,9 +48,9 @@
 # print(subsets([1, 2, 3,4]))
 
 #Lambdaa Function
-# a=lambda x:x+x
-# print(a(12))
+a=lambda x:x+x
+print(a(12))
 
-# evenodd=lambda n:"even" if n%2==0 else"odd"
-# print(evenodd(246))
+evenodd=lambda n:"even" if n%2==0 else"odd"
+print(evenodd(246))
 
