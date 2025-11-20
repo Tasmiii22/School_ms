@@ -59,16 +59,32 @@
 # res=Power(2)
 # print(res(4))
 
-class Counter:
-  def __init__(self):
-    self.count=0
-  def __call__(self):
-    self.count+=1
-    return self.count
-c=Counter()
-print(c())
-print(c())
-print(c())
+# class Counter:
+#   def __init__(self):
+#     self.count=0
+#   def __call__(self):
+#     self.count+=1
+#     return self.count
+# c=Counter()
+# print(c())
+# print(c())
+# print(c())
+
+class Discount:
+  def __init__(self,name,percentage):
+    self.name=name
+    self.percentage=percentage
+  def __str__(self):
+    return f"Discount {self.name} {self.percentage}% Off"    
+  def __repr__(self):
+    return f"Discount {self.name!r} {self.percentage!r}% Off"  
     
+  def __call__(self,price):
+    dis_price=(price*self.percentage/100)
+    return dis_price
   
-    
+sat=Discount("26 jan",10)
+diwali=Discount("diwalii",15)
+print([sat,diwali])    
+  
+print(sat(2000))
