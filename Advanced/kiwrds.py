@@ -51,12 +51,24 @@
 # res=Calc(4)
 # print(res(3))
 
-class Power:
-  def __init__(self,exponent):
-     self.exponent=exponent
-  def __call__(self,base):
-    return self.exponent**base
-res=Power(2)
-print(res(4))
+# class Power:
+#   def __init__(self,exponent):
+#      self.exponent=exponent
+#   def __call__(self,base):
+#     return self.exponent**base
+# res=Power(2)
+# print(res(4))
+
+class Counter:
+  def __init__(self):
+    self.count=0
+  def __call__(self):
+    self.count+=1
+    return self.count
+c=Counter()
+print(c())
+print(c())
+print(c())
     
+  
     
