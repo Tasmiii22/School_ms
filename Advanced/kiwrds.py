@@ -70,21 +70,31 @@
 # print(c())
 # print(c())
 
-class Discount:
-  def __init__(self,name,percentage):
-    self.name=name
-    self.percentage=percentage
-  def __str__(self):
-    return f"Discount {self.name} {self.percentage}% Off"    
-  def __repr__(self):
-    return f"Discount {self.name!r} {self.percentage!r}% Off"  
+# class Discount:
+#   def __init__(self,name,percentage):
+#     self.name=name
+#     self.percentage=percentage
+#   def __str__(self):
+#     return f"Discount {self.name} {self.percentage}% Off"    
+#   def __repr__(self):
+#     return f"Discount {self.name!r} {self.percentage!r}% Off"  
     
-  def __call__(self,price):
-    dis_price=(price*self.percentage/100)
-    return dis_price
+#   def __call__(self,price):
+#     dis_price=(price*self.percentage/100)
+#     return dis_price
   
-sat=Discount("26 jan",10)
-diwali=Discount("diwalii",15)
-print([sat,diwali])    
+# sat=Discount("26 jan",10)
+# diwali=Discount("diwalii",15)
+# print([sat,diwali])    
   
-print(sat(2000))
+# print(sat(2000))
+
+class book:
+  def __init__(self,title,author):
+    self.title=title
+    self.author=author
+  def __repr__(self):
+    return f"Book Title: {self.title!r} and Author: {self.author}"
+b=book("Harry Potter","JK Rowling")
+print(repr(b))
+    
